@@ -44,9 +44,9 @@
                     </form>
                     <br>
                     <div id="signup" class="singupclass">
-                    <button onclick="signuponoff()" class="mainbuttons">Sign Up</button>
+                    <button onclick="signupformonoff()" class="mainbuttons">Sign Up</button>
                     <br>
-                    <form id="signupform" class="loginformclass">
+                    <form id="signupform" class="loginformclass" style="display: none;">
                         <h4>Sign Up</h4>
                         <label for="firstname">First Name</label><br>
                         <input id="firstname" type="text" placeholder="First name"><br>
@@ -65,20 +65,9 @@
                     </div>
                 </div>
             </div>
-            <script src="script.js">
+            <script src="script.js" defer>
 
-                document.addEventListener("DOMContentLoaded", function() {
-     
-                    function signupformonoff() {
-                        const signupform = document.getElementById("signupform");
-                        if (signupform.style.display == "none") {
-                            signupform.style.display = "block";
-                        } else {
-                            signupform.style.display = "none";
-                        }
-                        }
-                    }
-                )
+                
             </script>
         </main>
 
