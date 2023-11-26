@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CoffeeCup</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>CoffeeCup</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="store.html">Store</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About</a>
+            </nav>
+        </header>
+
+        <main>
+            <div id="landingimg">
+                <img class="imglanding" src="images/coffee-full-photography.jpg" alt="coffee beans, cup, packet, flask">
+            </div>
+            <div id="welcomediv">
+            <h2>Our Coffee</h2>
+            <p>At CoffeeCup, we are passionate about delivering the best quality coffee to our customers. We source our beans from ethical and sustainable farms around the world, and roast them to perfection in our state-of-the-art facilities. We believe that coffee is more than just a drink, it's a way of life. That's why we offer a variety of blends and flavors to suit every taste and mood. Whether you need a morning boost, a midday break, or a cozy evening treat, we have the perfect cup for you.</p>
+
+            <p class="centertxt"><b>Try CoffeeCup today and discover the difference.</b></span></p>
+
+            <a class="mainbuttons" href="store.html">Shop Now</a>
+            </div>
+            <div id="signuplogin" class="signuploginclass">
+                <div id="login" class="loginclass">
+                    <form id="loginform" class="loginformclass">
+                        <h4>Log In</h4>
+                        <label for="emailaddress">Email</label><br>
+                        <input id="emailaddress" type="email" placeholder="Email address here..."><br>
+                        <label for="userpassword">Password</label><br>
+                        <input id="userpassword" type="password" placeholder="Pasword here..."><br>
+                        <p class="resetpasswordtextclass">Forgot Password? <a href="#passwordreset">Reset</a></p><br>
+                        <button type="submit" id="loginformsubmit" class="loginformsubmitclass">Login</button>
+                        <br>
+                    </form>
+                    <br>
+                    <div id="signup" class="singupclass">
+                    <button onclick="signuponoff()" class="mainbuttons">Sign Up</button>
+                    <br>
+                    <form id="signupform" class="loginformclass">
+                        <h4>Sign Up</h4>
+                        <label for="firstname">First Name</label><br>
+                        <input id="firstname" type="text" placeholder="First name"><br>
+                        <label for="lastname">Last Name</label><br>
+                        <input id="lastname" type="text" placeholder="Last name"><br>
+                        <label for="username">Username</label><br>
+                        <input id="username" type="text" placeholder="New username"><br>
+                        <label for="emailaddress">Email</label><br>
+                        <input id="emailaddress" type="email" placeholder="Email address"><br>
+                        <label for="userpassword">Password</label><br>
+                        <input id="userpassword" type="password" placeholder="New password"><br>
+                        
+                        <button type="submit" id="signupformsubmit" class="loginformsubmitclass">Sign Up</button>
+                        <br>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <script src="script.js">
+
+                document.addEventListener("DOMContentLoaded", function() {
+     
+                    function signupformonoff() {
+                        const signupform = document.getElementById("signupform");
+                        if (signupform.style.display == "none") {
+                            signupform.style.display = "block";
+                        } else {
+                            signupform.style.display = "none";
+                        }
+                        }
+                    }
+                )
+            </script>
+        </main>
+
+        <footer>
+            <p class="footertxt">CoffeeCup, 2023.</p>
+        </footer>
+    </body>
+</html>
