@@ -2,6 +2,8 @@
 
 /* To set up database */
 
+MySQL
+
 \connect -h localhost -u root -p
 
 \sql
@@ -18,6 +20,8 @@ CREATE TABLE coffeesignup (
 );
 
 /* To view the database */
+
+MySQL
 
 \connect -h localhost -u root -p;
 
